@@ -4,6 +4,10 @@
 
 Criar um serviço para calcular o valor de um CDB pós fixado indexado ao CDI em uma data específica e uma página web em que esses dados calculados serão expostos.
 
+## Aplicação
+
+A API foi desenvolvida em python com o uso do Django Rest Framework(DRF), e o deploy foi realizado através do herokuapp.
+
 ## Acesso ao deploy
 
 A aplicação está disponível na seguinte URL:
@@ -15,7 +19,8 @@ https://teste-gorila-cdb.herokuapp.com/cdb/
 - No corpo da requisição é necessário informar as datas de início e fim do investimento (investmentDate e currentDate, respectivamente) e a % do CDI do investimento (cdbRate)
 
 ex.: POST https://teste-gorila-cdb.herokuapp.com/cdb/
-Request Body:
+
+`Request Body:`
 ```JSON
 {
     "investmentDate":"2016-11-14",
