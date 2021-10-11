@@ -9,7 +9,7 @@ from collections import deque
 from decimal import *
 
 #View da requisição
-class CDBList(APIView):
+class CDB(APIView):
     #Requisição POST que realizará os cálculos e retornará a evolução do investimento CDB
     def post(self, request):
         serializer = CDBSerializer(data=request.data)
